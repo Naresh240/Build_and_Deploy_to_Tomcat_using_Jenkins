@@ -8,5 +8,10 @@ pipeline {
                     url: 'https://github.com/Naresh240/Build_and_Deploy_to_Tomcat_using_Jenkins.git'
             }
         }
+        stage("Build_Artifact") {
+            steps {
+                sh "mvn clean package"
+            }
+        }
     }
 }
