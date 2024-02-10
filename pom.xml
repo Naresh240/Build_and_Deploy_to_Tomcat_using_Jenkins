@@ -19,7 +19,18 @@
 			<version>8.0.11</version>
 		</dependency>
 	</dependencies>
-	
+
+	<distributionManagement>
+		<snapshotRepository>
+		   <id>maven-snapshots</id>
+		   <url>http://54.211.147.160:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+		<repository>
+		   <id>maven-releases</id>
+		   <url>http://54.211.147.160:8081/repository/maven-releases/</url>
+		</repository>
+	 </distributionManagement>
+
 	<build>
 		<plugins>
 			 <plugin>
